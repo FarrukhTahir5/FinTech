@@ -38,18 +38,18 @@ class CardInfo extends StatelessWidget {
                       offset: Offset(0, 6))
                 ],
                 gradient: const LinearGradient(
-                    colors: [Color(0xFF642b73), Color(0xFFc6426e)]),
+                    colors: [Color(0xFF375bd9), Color(0xFF6194e1),Color(0xFF5c79e0)]),
                 borderRadius: BorderRadius.circular(20),
               ),
               width: 50,
               height: 200,
               child: Stack(
-                children: const [
+                children:  [
                   Align(
                       alignment: FractionalOffset(0.1, 0.2 / 2),
                       child: Text(
                         "Total Balance:",
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(color: Colors.white,fontSize: 12),
                       )),
                   Align(
                       alignment: FractionalOffset(0.1, 0.4 / 2),
@@ -63,7 +63,7 @@ class CardInfo extends StatelessWidget {
                       )),
                   Align(
                       alignment: FractionalOffset(0.85, 0.15),
-                      child: Icon(Icons.add)),
+                      child: Image.asset("assets/Mastercard-Logo.png",height: 40,)),
                   Align(
                       alignment: FractionalOffset(0.85, 0.84),
                       child: Text(
@@ -91,7 +91,7 @@ class CardInfo extends StatelessWidget {
                                     borderRadius: BorderRadius.circular(20))),
                             padding: MaterialStateProperty.all(EdgeInsets.all(20))),
                       ),SizedBox(height: 12,),
-                      Text(
+                      Text(style: TextStyle(fontWeight: FontWeight.w600),
                         "Send",
                       )
                     ],
@@ -112,7 +112,7 @@ class CardInfo extends StatelessWidget {
                                     borderRadius: BorderRadius.circular(20))),
                             padding: MaterialStateProperty.all(EdgeInsets.all(20))),
                       ),SizedBox(height: 12,),
-                      Text(
+                      Text(style: TextStyle(fontWeight: FontWeight.w600),
                         "Receive",
                       )
                     ],
@@ -133,7 +133,7 @@ class CardInfo extends StatelessWidget {
                                     borderRadius: BorderRadius.circular(20))),
                             padding: MaterialStateProperty.all(EdgeInsets.all(17))),
                       ),SizedBox(height: 12,),
-                      Text(
+                      Text(style: TextStyle(fontWeight: FontWeight.w600),
                         "Topup",
                       )
                     ],
@@ -154,7 +154,7 @@ class CardInfo extends StatelessWidget {
                                     borderRadius: BorderRadius.circular(20))),
                             padding: MaterialStateProperty.all(EdgeInsets.all(20))),
                       ),SizedBox(height: 12,),
-                      Text(
+                      Text(style: TextStyle(fontWeight: FontWeight.w600),
                         "More",
                       )]
                   )),
