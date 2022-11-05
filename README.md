@@ -1,16 +1,7 @@
 # fintech_app
 
 Financial App
+<img src="app-mockup-ios-screenshot-5-default-5 5-inch-2](https://user-images.githubusercontent.com/72446374/200118298-6b71141b-75cd-4dd9-a956-f2733285f92d.png">
+<img src="app-mockup-ios-screenshot-5-default-5 5-inch-3](https://user-images.githubusercontent.com/72446374/200118300-a4b5b28d-7c0d-467d-97d3-1f42e20365e0.png">
+<img src="app-mockup-ios-screenshot-5-default-5 5-inch-1](https://user-images.githubusercontent.com/72446374/200118301-b151082b-d3dc-4137-ae40-39e49a5bf970.png">
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
