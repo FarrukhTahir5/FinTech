@@ -12,10 +12,10 @@ class HomePage extends StatelessWidget {
         child: Stack(
           children: [
             Align(alignment: FractionalOffset(0,1),child: Opacity(opacity: 0.3,
-            child: SvgPicture.asset('assets/Ellipse.svg',))),
-            Align(alignment: FractionalOffset(1,0.1),child: Opacity(child: SvgPicture.asset('assets/Ellipse1.svg'),opacity: 0.5,)),
-            Align(child: SvgPicture.asset('assets/Vector.svg',height: 800,),alignment: FractionalOffset(0,4.25),),
-            SvgPicture.asset('assets/mainphotos.svg',height: 450,),
+            child: SvgPicture.asset('assets/img/Ellipse.svg',))),
+            Align(alignment: FractionalOffset(1,0.1),child: Opacity(child: SvgPicture.asset('assets/img/Ellipse1.svg'),opacity: 0.5,)),
+            Align(child: SvgPicture.asset('assets/img/Vector.svg',height: 800,),alignment: FractionalOffset(0,4.25),),
+            SvgPicture.asset('assets/img/mainphotos.svg',height: 450,),
             Align(alignment: FractionalOffset(0.5,0.75),
               child: Container(margin: EdgeInsets.fromLTRB(25,60,25,80),
                 child: Text(

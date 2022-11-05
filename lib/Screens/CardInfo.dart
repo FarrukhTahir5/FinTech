@@ -1,3 +1,4 @@
+import 'package:fintech_app/WidgetsCustom/Transactions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -9,32 +10,7 @@ class CardInfo extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          Positioned(
-          bottom: 15,
-          left: 0
-          ,child: Padding( padding: EdgeInsets.fromLTRB(10, 0, 15, 0),
-            child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(50),color: Colors.white,shape: BoxShape.rectangle,boxShadow: [BoxShadow(color: Colors.grey.withOpacity(0.5),offset: Offset(0,3),blurRadius: 7,spreadRadius: 5)]),
-              height: 80,
-
-              width: MediaQuery.of(context).size.width-20,
-                child: Stack(
-                  children: [
-                    Align(alignment: FractionalOffset(0,0.5),
-                      child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          SvgPicture.asset('assets/Icon-1.svg',),
-                          SvgPicture.asset('assets/Icon.svg',),
-                          Stack(children: [SvgPicture.asset('assets/Ellipse 8.svg',height: 55),Container(child: Positioned(top: 15,left: 15,child: SvgPicture.asset('assets/icon123.svg',height: 25)))]),
-                          SvgPicture.asset('assets/Icon-2.svg',),
-                          SvgPicture.asset('assets/user-01.svg'),
-                        ],
-                      ),
-                    )
-                  ],
-                )
-            ),
-          ))
-          ,SafeArea(
+          SafeArea(
           child: ListView(
             padding: const EdgeInsets.all(28),
             children: [
@@ -91,7 +67,7 @@ class CardInfo extends StatelessWidget {
                         )),
                     Align(
                         alignment: FractionalOffset(0.85, 0.15),
-                        child: Image.asset("assets/Mastercard-Logo.png",height: 40,)),
+                        child: Image.asset("assets/img/Mastercard-Logo.png",height: 40,)),
                     Align(
                         alignment: FractionalOffset(0.85, 0.84),
                         child: Text(
@@ -194,10 +170,43 @@ class CardInfo extends StatelessWidget {
                   Text("Transactions",style: TextStyle(fontSize: 23,fontWeight: FontWeight.bold,)),
                   ElevatedButton(onPressed: ()=>{}, child: Text("See all",style: TextStyle(color: Colors.grey[400]),),style: ButtonStyle(elevation: MaterialStateProperty.all(0),backgroundColor: MaterialStateProperty.all(Colors.transparent)),)
                 ],mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              )
+              ),
+              Transactions(received: false, amount: 500),
+              Transactions(received: true, amount: 5500),
+              Transactions(received: true, amount: 5100),
+              Transactions(received: false, amount: 520),
+
+              SizedBox(height: 58,)
             ],
           ),
-        )],
+        ),
+          Positioned(
+              bottom: 15,
+              left: 0
+              ,child: Padding( padding: EdgeInsets.fromLTRB(10, 0, 15, 0),
+            child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(50),color: Colors.white,shape: BoxShape.rectangle,boxShadow: [BoxShadow(color: Colors.grey.withOpacity(0.5),offset: Offset(0,3),blurRadius: 7,spreadRadius: 5)]),
+                height: 80,
+
+                width: MediaQuery.of(context).size.width-20,
+                child: Stack(
+                  children: [
+                    Align(alignment: FractionalOffset(0,0.5),
+                      child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          SvgPicture.asset('assets/img/Icon-1.svg',),
+                          SvgPicture.asset('assets/img/Icon.svg',),
+                          Stack(children: [SvgPicture.asset('assets/img/Ellipse 8.svg',height: 55),Container(child: Positioned(top: 15,left: 15,child: SvgPicture.asset('assets/img/icon123.svg',height: 25)))]),
+                          SvgPicture.asset('assets/img/Icon-2.svg',),
+                          SvgPicture.asset('assets/img/user-01.svg'),
+                        ],
+                      ),
+                    )
+                  ],
+                )
+            ),
+          ))
+        ]
+        ,
       ),
     );
   }
